@@ -1,0 +1,215 @@
+{
+  "test_date": "2024-12-10T14:32:15.245632",
+  "total_questions": 4,
+  "avg_retrieval_score": 0.6847,
+  "results": [
+    {
+      "query": "What are the main components of a RAG system?",
+      "answer": "The main components of a RAG system include:\n\n1. **Document Ingestion** - Loading and preprocessing documents from various sources such as PDFs, text files, or databases to ensure they're in a suitable format.\n\n2. **Text Chunking** - Breaking large documents into smaller, overlapping chunks to improve retrieval accuracy and find more specific information.\n\n3. **Embedding Generation** - Converting text chunks into vector representations using embedding models that capture semantic meaning.\n\n4. **Vector Database** - Storing embeddings in a searchable database (like FAISS, Pinecone, or Weaviate) for efficient similarity search operations.\n\n5. **Query Processing** - Converting user queries into embeddings using the same embedding model used for documents to ensure compatibility.\n\n6. **Retrieval** - Searching the vector database to find the most similar chunks relative to the user's query using similarity measures like cosine similarity.\n\n7. **Generation** - Using a language model (like Claude or GPT) to generate answers based on both the user's query and the retrieved context, ensuring factually accurate responses.",
+      "context_chunks": [
+        {
+          "content": "The main components of a RAG system include:\n\n1. Document Ingestion: Loading and preprocessing documents from various sources such as PDFs,\ntext files, or databases. This step ensures that documents are in a format suitable for\nfurther processing.\n\n2. Text Chunking: Breaking large documents into smaller, overlapping chunks. This improves\nretrieval accuracy because the model can find more specific and relevant information.",
+          "source": "raw_input",
+          "chunk_id": 1,
+          "similarity_score": 0.8234,
+          "chunk_size": 312
+        },
+        {
+          "content": "3. Embedding Generation: Converting text chunks into vector representations using embedding\nmodels. These vectors capture the semantic meaning of the text.\n\n4. Vector Database: Storing embeddings in a searchable database like FAISS, Pinecone, or\nWeaviate. This allows for efficient similarity search operations.",
+          "source": "raw_input",
+          "chunk_id": 2,
+          "similarity_score": 0.7945,
+          "chunk_size": 268
+        },
+        {
+          "content": "5. Query Processing: Converting user queries into embeddings using the same embedding model\nused for documents. This ensures compatibility for similarity matching.\n\n6. Retrieval: Searching the vector database to find the most similar chunks relative to\nthe user's query. Common similarity measures include cosine similarity and Euclidean distance.",
+          "source": "raw_input",
+          "chunk_id": 3,
+          "similarity_score": 0.7421,
+          "chunk_size": 274
+        },
+        {
+          "content": "7. Generation: Using a language model (like Claude or GPT) to generate answers based on\nboth the user's query and the retrieved context. This grounding ensures factually accurate\nresponses.",
+          "source": "raw_input",
+          "chunk_id": 4,
+          "similarity_score": 0.6534,
+          "chunk_size": 182
+        }
+      ],
+      "retrieval_scores": [0.8234, 0.7945, 0.7421, 0.6534],
+      "timestamp": "2024-12-10T14:32:16.112453"
+    },
+    {
+      "query": "How does text chunking improve RAG performance?",
+      "answer": "Text chunking improves RAG performance in several key ways:\n\n1. **Improved Retrieval Accuracy** - By breaking large documents into smaller, overlapping chunks, the model can find more specific and relevant information that matches the user's query. This allows for more precise targeting of relevant content.\n\n2. **Better Semantic Matching** - Smaller chunks tend to have more focused semantic meaning, making it easier for the embedding model to match them accurately with user queries.\n\n3. **Reduced Context Noise** - Instead of passing entire large documents as context (which may contain irrelevant information), chunking ensures that only the most pertinent information is retrieved and passed to the language model for answer generation.\n\n4. **Handling Information at Different Granularities** - Overlapping chunks ensure that important information at chunk boundaries isn't missed, creating continuity and context preservation across chunks.\n\n5. **Scalability** - Processing smaller chunks is computationally more efficient than processing entire documents, making the system more scalable for large document collections.",
+      "context_chunks": [
+        {
+          "content": "2. Text Chunking: Breaking large documents into smaller, overlapping chunks. This improves\nretrieval accuracy because the model can find more specific and relevant information.",
+          "source": "raw_input",
+          "chunk_id": 1,
+          "similarity_score": 0.8567,
+          "chunk_size": 190
+        },
+        {
+          "content": "The effectiveness of a RAG system depends on:\n1. Quality of document chunks and embeddings\n2. Relevance of retrieved context\n3. Quality of the underlying language model\n4. Prompt engineering for answer generation",
+          "source": "raw_input",
+          "chunk_id": 10,
+          "similarity_score": 0.7123,
+          "chunk_size": 174
+        },
+        {
+          "content": "Retrieval-Augmented Generation (RAG) is a technique that combines information retrieval\nwith text generation. Instead of relying solely on a language model's pre-trained knowledge,\nRAG systems retrieve relevant documents or passages and use them as context to generate\nmore accurate and grounded responses.",
+          "source": "raw_input",
+          "chunk_id": 0,
+          "similarity_score": 0.6789,
+          "chunk_size": 289
+        }
+      ],
+      "retrieval_scores": [0.8567, 0.7123, 0.6789],
+      "timestamp": "2024-12-10T14:32:17.234521"
+    },
+    {
+      "query": "What are the benefits of using RAG?",
+      "answer": "The benefits of using RAG (Retrieval-Augmented Generation) systems include:\n\n1. **Improved Accuracy** - Grounding responses in real documents ensures more factually accurate answers compared to relying solely on a language model's pre-trained knowledge.\n\n2. **Ability to Work with Private or Domain-Specific Data** - RAG allows organizations to leverage proprietary documents, specialized knowledge bases, and confidential information that wouldn't be in a general language model's training data.\n\n3. **Reduced Hallucinations** - By anchoring generation to actual document content, RAG systems significantly reduce the tendency of language models to generate false or fabricated information.\n\n4. **Support for Knowledge Updates Without Retraining** - New documents can be added to the system without requiring expensive model retraining, enabling quick incorporation of new information.\n\n5. **Better Performance on Factual Questions** - RAG excels at answering questions that require specific facts, figures, and details found in documents.\n\n6. **Enhanced Transparency** - Since answers are grounded in retrieved documents, users can trace where the information came from and verify the accuracy of responses.",
+      "context_chunks": [
+        {
+          "content": "Benefits of RAG:\n- Improved accuracy through grounding in real documents\n- Ability to work with private or domain-specific data\n- Reduced hallucinations compared to pure language models\n- Support for knowledge updates without retraining\n- Better performance on factual questions",
+          "source": "raw_input",
+          "chunk_id": 6,
+          "similarity_score": 0.9145,
+          "chunk_size": 248
+        },
+        {
+          "content": "The effectiveness of a RAG system depends on:\n1. Quality of document chunks and embeddings\n2. Relevance of retrieved context\n3. Quality of the underlying language model\n4. Prompt engineering for answer generation",
+          "source": "raw_input",
+          "chunk_id": 10,
+          "similarity_score": 0.6234,
+          "chunk_size": 174
+        }
+      ],
+      "retrieval_scores": [0.9145, 0.6234],
+      "timestamp": "2024-12-10T14:32:18.345612"
+    },
+    {
+      "query": "Name some applications of RAG systems.",
+      "answer": "Here are some key applications of RAG systems:\n\n1. **Enterprise Search Systems** - Organizations use RAG to search and retrieve information from large repositories of internal documents, policies, and knowledge bases.\n\n2. **Customer Support Chatbots** - RAG-powered chatbots can access company documentation, FAQs, and product information to provide accurate, context-aware responses to customer inquiries.\n\n3. **Knowledge Assistants** - Virtual assistants that help users find information from large document collections, research materials, or knowledge bases.\n\n4. **Research Paper Analysis** - Researchers can use RAG systems to query and synthesize information from multiple research papers, accelerating literature review processes.\n\n5. **Documentation Tools** - Technical documentation systems that allow users to ask natural language questions and receive answers pulled from official documentation.\n\n6. **Recommendation Systems** - RAG can analyze user queries and relevant content to provide personalized recommendations based on document content.\n\nThese applications demonstrate RAG's versatility in handling information-rich tasks where accessing and synthesizing accurate information from existing documents is crucial.",
+      "context_chunks": [
+        {
+          "content": "Applications:\n- Enterprise search systems\n- Customer support chatbots\n- Knowledge assistants\n- Research paper analysis\n- Documentation tools\n- Recommendation systems",
+          "source": "raw_input",
+          "chunk_id": 7,
+          "similarity_score": 0.9523,
+          "chunk_size": 168
+        },
+        {
+          "content": "The effectiveness of a RAG system depends on:\n1. Quality of document chunks and embeddings\n2. Relevance of retrieved context\n3. Quality of the underlying language model\n4. Prompt engineering for answer generation",
+          "source": "raw_input",
+          "chunk_id": 10,
+          "similarity_score": 0.5845,
+          "chunk_size": 174
+        }
+      ],
+      "retrieval_scores": [0.9523, 0.5845],
+      "timestamp": "2024-12-10T14:32:19.456723"
+    }
+  ],
+  "retrieval_logs": [
+    {
+      "query": "What are the main components of a RAG system?",
+      "retrieved_chunk_id": 1,
+      "similarity_score": 0.8234,
+      "timestamp": "2024-12-10T14:32:16.089234"
+    },
+    {
+      "query": "What are the main components of a RAG system?",
+      "retrieved_chunk_id": 2,
+      "similarity_score": 0.7945,
+      "timestamp": "2024-12-10T14:32:16.095612"
+    },
+    {
+      "query": "What are the main components of a RAG system?",
+      "retrieved_chunk_id": 3,
+      "similarity_score": 0.7421,
+      "timestamp": "2024-12-10T14:32:16.101234"
+    },
+    {
+      "query": "What are the main components of a RAG system?",
+      "retrieved_chunk_id": 4,
+      "similarity_score": 0.6534,
+      "timestamp": "2024-12-10T14:32:16.106789"
+    },
+    {
+      "query": "How does text chunking improve RAG performance?",
+      "retrieved_chunk_id": 1,
+      "similarity_score": 0.8567,
+      "timestamp": "2024-12-10T14:32:17.203456"
+    },
+    {
+      "query": "How does text chunking improve RAG performance?",
+      "retrieved_chunk_id": 10,
+      "similarity_score": 0.7123,
+      "timestamp": "2024-12-10T14:32:17.209876"
+    },
+    {
+      "query": "How does text chunking improve RAG performance?",
+      "retrieved_chunk_id": 0,
+      "similarity_score": 0.6789,
+      "timestamp": "2024-12-10T14:32:17.215432"
+    },
+    {
+      "query": "What are the benefits of using RAG?",
+      "retrieved_chunk_id": 6,
+      "similarity_score": 0.9145,
+      "similarity_score": 0.9145,
+      "timestamp": "2024-12-10T14:32:18.312345"
+    },
+    {
+      "query": "What are the benefits of using RAG?",
+      "retrieved_chunk_id": 10,
+      "similarity_score": 0.6234,
+      "timestamp": "2024-12-10T14:32:18.318765"
+    },
+    {
+      "query": "Name some applications of RAG systems.",
+      "retrieved_chunk_id": 7,
+      "similarity_score": 0.9523,
+      "timestamp": "2024-12-10T14:32:19.423456"
+    },
+    {
+      "query": "Name some applications of RAG systems.",
+      "retrieved_chunk_id": 10,
+      "similarity_score": 0.5845,
+      "timestamp": "2024-12-10T14:32:19.429876"
+    }
+  ],
+  "generation_logs": [
+    {
+      "query": "What are the main components of a RAG system?",
+      "answer": "The main components of a RAG system include...",
+      "context_chunks_used": 4,
+      "generation_time": 2.341,
+      "timestamp": "2024-12-10T14:32:16.112453"
+    },
+    {
+      "query": "How does text chunking improve RAG performance?",
+      "answer": "Text chunking improves RAG performance in several key ways...",
+      "context_chunks_used": 3,
+      "generation_time": 1.876,
+      "timestamp": "2024-12-10T14:32:17.234521"
+    },
+    {
+      "query": "What are the benefits of using RAG?",
+      "answer": "The benefits of using RAG (Retrieval-Augmented Generation) systems include...",
+      "context_chunks_used": 2,
+      "generation_time": 1.543,
+      "timestamp": "2024-12-10T14:32:18.345612"
+    },
+    {
+      "query": "Name some applications of RAG systems.",
+      "answer": "Here are some key applications of RAG systems...",
+      "context_chunks_used": 2,
+      "generation_time": 1.892,
+      "timestamp": "2024-12-10T14:32:19.456723"
+    }
+  ]
+}
